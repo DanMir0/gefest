@@ -1,0 +1,67 @@
+.first-order {
+    margin-top: 74px;
+    background: url(../img/first_order.webp);
+    background-repeat: no-repeat;
+    background-position-y: 376px;
+    position: relative;
+
+    &__name {
+        font-weight: $font-weight-600;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__text {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    }
+
+    &__director {
+        margin-top: 378px;
+        background: #FFFFFF;
+        border-radius: 8px;
+            & h4 {
+            font-weight: $font-weight-600;
+            font-size: $small-font-size;
+            line-height: 20px;  
+        }
+        & p {
+            font-weight: 100;
+            font-size: 10px;
+            line-height: 20px;  
+        }
+    }
+
+    &__director-group {
+        margin-bottom: 20px;
+        padding: 13px 6px 13px 14px;
+    }
+
+    &__form {
+        padding: 37px 0 67px 0;
+        background: #1A2C41;
+        border-radius: 4px;
+        color: #FFFFFF;
+    }
+
+    &__title-form {
+        margin-bottom: 33px;
+        font-size: $base-font-size;
+        line-height: 24px;
+        & h3 {
+            font-weight: $font-weight-600;
+            font-size: $base-font-size;
+            line-height: 24px;
+        }
+        & p {
+            font-weight: $font-weight-400;
+            font-size: $base-font-size;
+            line-height: 24px;
+        }
+    }
+}

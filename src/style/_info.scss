@@ -1,0 +1,13 @@
+.info {
+    margin-top: 70px;
+    background: linear-gradient(0deg, rgba(26, 44, 65, 0.79), rgba(26, 44, 65, 0.79)), url(../img/info.webp);
+    padding: 64px 30px 50px 24px;
+
+    &__title {
+        font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+}

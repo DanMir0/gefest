@@ -1,0 +1,36 @@
+.partners {
+    margin-top: 53px;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+
+    &__name {
+        font-weight: $font-weight-600;
+        font-size: $base-font-size;
+        line-height: 20px;
+    }
+
+    &__description {
+        font-weight: $font-weight-400;
+        font-size: $small-font-size;
+        line-height: 20px;
+    }
+
+    &__group-imgs {
+        margin-top: 53px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__group-img {
+        display: flex;
+        flex-direction: row;
+        gap: 38px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

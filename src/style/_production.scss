@@ -1,0 +1,26 @@
+.production {
+    margin-top: 93px;
+
+    &__title {
+        margin-bottom: 44px;
+    }
+
+    &__name {
+        font-weight: $font-weight-400;
+        font-size: $big-font-size;
+        line-height: 20px;
+    }
+
+    &__name-2 {
+        font-weight: $font-weight-400;
+        font-size: $big-font-size;
+        line-height: 20px;
+    }
+
+    &__description {
+        margin-top: 24px;
+        font-weight: $font-weight-400;
+        font-size: $small-font-size;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,33 @@
+.benefit {
+    margin-top: 591px;
+    padding-bottom: 46px;
+    border-bottom: 1px solid #AEB6BB;
+
+    &__title {
+        font-weight: $font-weight-600;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__group {
+        margin-top: 45px;
+    }
+
+    &__group-text {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        line-height: 20px;
+        margin-bottom: 50px;
+    }
+
+    &__name {
+        font-weight: $font-weight-600;
+        font-size: $base-font-size;
+    }
+
+    &__description {
+        font-weight: $font-weight-400;
+        font-size: $small-font-size;
+    }
+}

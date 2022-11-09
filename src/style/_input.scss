@@ -1,0 +1,29 @@
+.input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #CDD6DB;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: $font-weight-400;
+    font-size: $small-font-size;
+    line-height: 24px;
+
+    &--indents-full-price {
+        margin-top: 11px;
+        margin-bottom: 24px;
+    }
+
+    &--indents-project {
+        margin-top: 2px;
+        margin-bottom: 15px;
+    }
+
+    &--file {
+        display: none;
+    }
+
+    &--indents-first-order {
+        margin-top: 2px;
+        margin-bottom: 17px;
+    }
+}

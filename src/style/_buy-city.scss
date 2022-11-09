@@ -1,0 +1,28 @@
+.buy-city {
+    margin-top: 48px;
+
+    &__name {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__name-2 {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: $font-weight-400;
+    }
+
+    &__description {
+        margin-top: 38px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    &__maps {
+        margin-top: 51px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

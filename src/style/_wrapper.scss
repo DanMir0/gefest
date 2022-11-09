@@ -1,0 +1,14 @@
+.wrapper {
+    margin-top: 53px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__img {
+        display: none;
+        width: 100%;
+        &--active {
+            display: block;
+        }
+    }
+}

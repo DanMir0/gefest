@@ -1,0 +1,30 @@
+.buy-manufacturer {
+  margin-top: 73px;
+
+  &__title {
+    margin-bottom: 47px;
+  }
+
+  &__name {
+    font-weight: $font-weight-400;
+    font-size: $big-font-size;
+    line-height: 20px;
+  }
+
+  &__name-2 {
+    font-weight: $font-weight-400;
+    font-size: $big-font-size;
+    line-height: 20px;
+  }
+
+  &__description {
+    margin-top: 24px;
+    font-weight: $font-weight-400;
+    font-size: $small-font-size;
+    line-height: 20px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

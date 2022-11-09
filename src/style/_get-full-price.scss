@@ -1,0 +1,51 @@
+.get-full-price {
+    margin-top: 45px;
+    background: #1A2C41;
+    padding: 48px 0 68px 0;
+
+    &__form {
+        color: #FFFFFF;
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        font-size: $big-font-size;
+        font-weight: $font-weight-600;
+        line-height: 24px;
+    }
+
+    &__label {
+        font-size: $base-font-size;
+        font-weight: $font-weight-400;
+        line-height: 28px;
+    }
+
+    &__select {
+        margin-top: 11px;
+        margin-bottom: 24px;
+        background: #FFFFFF;
+        border: 1px solid #CDD6DB;
+        border-radius: 4px;
+        width: 100%;
+        padding: 13.5px;
+        font-weight: $font-weight-400;
+        font-size: $small-font-size;
+        line-height: 28px;
+        color: #808080;
+    }
+
+    &__info {
+        margin-top: 7px;
+        margin-bottom: 14px;
+        font-weight: $font-weight-400;
+        font-size: $base-font-size;
+        line-height: 22px;
+    }
+
+    &__confidences-policy {
+        margin-top: 14px;
+        font-weight: $font-weight-400;
+        font-size: $small-font-size;
+        line-height: 16px;
+    }
+}

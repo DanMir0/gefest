@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: $primery-color;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 272px;
+    width: 100%;
+    @media (min-width: 352px) {
+        max-width: 1232px;
+    }
+}
+
+.header {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #AEB6BB;
+}
+
+.d-none {
+    display: none !important;
+}
