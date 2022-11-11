@@ -39,6 +39,12 @@
         padding: 10px;
         max-width: 222px;
         width: 100%;
+        @media (min-width: 1120px) {
+            font-size: $big-font-size;
+            line-height: 19px;
+            max-width: 246px;
+            height: 48px;
+        }
     }
 
     &--full-price {
