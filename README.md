@@ -1,8 +1,9 @@
 # gefest
 
 ## Description
-mobile tablet desktop
-:heavy_check_mark: :x: :heavy_check_mark:
+| mobile | tablet | desktop
+| ------------- |:------------------:| -----:|
+| :heavy_check_mark: | :x: | :heavy_check_mark:
 
 ## Project setup
 >npm install
