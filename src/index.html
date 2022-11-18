@@ -330,20 +330,34 @@
           <h2 class="get-full-price__title">
             Получите полный каталог и прайс на металлопрокат
           </h2>
-          <label class="get-full-price__label" for="full-price-email">Куда отправить прайс и каталог?</label>
-          <input class="input input--indents-full-price" id="full-price-email" type="email" placeholder="E-mail" />
-          <label class="get-full-price__label" for="full-price-first-name">Как к вам обращаться?</label>
-          <input class="input input--indents-full-price" id="full-price-first-name" type="text"
-            placeholder="Ваше имя" />
-          <label class="get-full-price__label" for="full-price-select">Какую компанию вы представляете?</label>
-          <select class="get-full-price__select" name="full-price" id="full-price-select">
-            <option value="">Торговая компания, магазин</option>
-            <option value="GEFEST">GEFEST</option>
-            <option value="Wildberis">Wildberis</option>
-          </select>
-          <label class="get-full-price__label" for="full-price-tel">Введите телефон</label>
-          <input class="input input--indents-full-price" id="full-price-tel" type="tel"
-            placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _" />
+          <div class="get-full-price__flex">
+            <div class="get-full-price__group">
+                 <div> 
+                  <label class="get-full-price__label" for="full-price-email">Куда отправить прайс и каталог?</label>
+                  <input class="input input--indents-full-price" id="full-price-email" type="email" placeholder="E-mail" />
+                </div>
+                <div>
+                  <label class="get-full-price__label" for="full-price-first-name">Как к вам обращаться?</label>
+                <input class="input input--indents-full-price" id="full-price-first-name" type="text"
+                  placeholder="Ваше имя" />
+                </div>
+            </div>
+            <div class="get-full-price__group">
+              <div>
+                <label class="get-full-price__label" for="full-price-select">Какую компанию вы представляете?</label>
+              <select class="get-full-price__select" name="full-price" id="full-price-select">
+                <option value="">Торговая компания, магазин</option>
+                <option value="GEFEST">GEFEST</option>
+                <option value="Wildberis">Wildberis</option>
+              </select>
+              </div>
+              <div>
+                <label class="get-full-price__label" for="full-price-tel">Введите телефон</label>
+              <input class="input input--indents-full-price" id="full-price-tel" type="tel"
+                placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _" />
+              </div>
+            </div>
+          </div>
           <p class="get-full-price__info">
             Перезвоним, чтобы обсудить условия поставки
           </p>
@@ -353,6 +367,7 @@
             персональных данных и соглашаетесь с Политикой конфиденциальности
           </p>
         </form>
+        <img class="get-full-price__img" src="./img/full-price.webp" alt="Картинка">
       </div>
     </section>
     <div class="container">
@@ -366,50 +381,68 @@
           </p>
         </div>
         <div class="warehouse__product">
-          <div class="warehouse__item">
-            <img src="./img/warehouse_stitz.webp" alt="Штрипс, полоса" />
-            <p class="warehouse__item-name">
-              <span>Штрипс, полоса</span> более 1 000 тонн
-            </p>
+          <div class="warehouse__group-item">
+            <div class="warehouse__item">
+              <img src="./img/warehouse_stitz.webp" alt="Штрипс, полоса" />
+              <p class="warehouse__item-name">
+                <span>Штрипс, полоса</span>
+                <br>более 1 000 тонн
+              </p>
+            </div>
+            <div class="warehouse__item">
+              <img src="./img/warehouse_profil.webp" alt="Профиль" />
+              <p class="warehouse__item-name">
+                <span>Профиль</span>
+                <br>более 200 тонн
+              </p>
+            </div>
+            <div class="warehouse__item">
+              <img src="./img/warehouse_grid.webp" alt="Сетка" />
+              <p class="warehouse__item-name">
+                <span>Сетка</span>
+                <br>более 300 тонн
+               
+              </p>
+            </div>
+            <div class="warehouse__item">
+              <img src="./img/warehouse_proflist.webp" alt="Профлист" />
+              <p class="warehouse__item-name">
+                <span>Профлист</span>
+                <br>более 300 тонн
+              </p>
+            </div>
           </div>
-          <div class="warehouse__item">
-            <img src="./img/warehouse_profil.webp" alt="Профиль" />
-            <p class="warehouse__item-name">
-              <span>Профиль</span><br />
-              более 200 тонн
-            </p>
-          </div>
-          <div class="warehouse__item">
-            <img src="./img/warehouse_grid.webp" alt="Сетка" />
-            <p class="warehouse__item-name">
-              <span>Сетка</span><br />
-              более 300 тонн
-            </p>
-          </div>
-          <div class="warehouse__item">
-            <img src="./img/warehouse_proflist.webp" alt="Профлист" />
-            <p class="warehouse__item-name">
-              <span>Профлист</span><br />
-              более 300 тонн
-            </p>
-          </div>
+          <figure class="warehouse__figure mobile-design">
+            <img src="./img/warehouse.webp" alt="Склад" />
+            <figcaption class="warehouse__figcaption">
+              Мы специально поддерживаем не снижаемые остатки, чтобы производить
+              отгрузку за 1-2 дня после оплаты
+            </figcaption>
+          </figure>
+          <figure class="warehouse__figure desk-design">
+            <img src="./img/warehouse-desk.webp" alt="Склад" />
+            <figcaption class="warehouse__figcaption">
+              Мы специально поддерживаем не снижаемые остатки, чтобы производить
+              отгрузку за 1-2 дня после оплаты
+            </figcaption>
+          </figure>
         </div>
-        <figure class="warehouse__figure">
-          <img src="./img/warehouse.webp" alt="Склад" />
-          <figcaption class="warehouse__figcaption">
-            Мы специально поддерживаем не снижаемые остатки, чтобы производить
-            отгрузку за 1-2 дня после оплаты
-          </figcaption>
-        </figure>
+       
       </section>
     </div>
-    <section class="info">
+    <section class="info mobile-design">
       <h2 class="info__title">
         Мы продумали всё, чтобы вы могли купить металлопрокат по выгодной цене
         и с доставкой за 2-3 дня
       </h2>
     </section>
     <div class="container">
+      <section class="info desk-design">
+        <h2 class="info__title">
+          Мы продумали всё, чтобы вы могли купить металлопрокат по выгодной цене
+          и с доставкой за 2-3 дня
+        </h2>
+      </section>
       <section class="buy-city">
         <div class="buy-city__group">
           <div class="buy-city__title">
@@ -471,49 +504,51 @@
     </div>
     <section class="project">
       <div class="container">
-        <div class="project__title">
-          <h2 class="project__name">
-            Давайте обсудим ваш проект и подготовим его расчет
-          </h2>
-          <p class="project__description">
-            Мы рассчитаем точную стоимость в течение 24 часов, подскажем, на
-            чем вы можете сэкономить и расскажем все о наших возможностях.
-          </p>
+        <div class="project__group">
+          <div class="project__title">
+            <h2 class="project__name">
+              Давайте обсудим ваш проект и подготовим его расчет
+            </h2>
+            <p class="project__description">
+              Мы рассчитаем точную стоимость в течение 24 часов, подскажем, на
+              чем вы можете сэкономить и расскажем все о наших возможностях.
+            </p>
+          </div>
+          <form class="project__form" action="">
+            <h3 class="project__name-2">
+              Получите предложение на поставку металлопроката
+            </h3>
+            <label class="project__label" for="project-first-name">Как к вам обращаться?</label>
+            <input class="input input--indents-project" id="project-first-name" type="text" placeholder="Ваше имя" />
+            <label class="project__label" for="project-tel">Введите телефон</label>
+            <input class="input input--indents-project" id="project-tel" type="tel"
+              placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _" />
+            <label class="project__label" for="project-email">Куда отправить прайс и каталог?</label>
+            <input class="input input--indents-project" id="project-email" type="email" placeholder="E-mail" />
+            <div class="project__file">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 21.75C8.27208 21.75 5.25 18.7279 5.25 15L5.25 7C5.25 4.37665 7.37665 2.25 10 2.25C12.6234 2.25 14.75 4.37665 14.75 7L14.75 15.1429C14.75 16.6616 13.5188 17.8929 12 17.8929C10.4812 17.8929 9.25 16.6616 9.25 15.1429L9.25 7.28571C9.25 6.8715 9.58579 6.53571 10 6.53571C10.4142 6.53571 10.75 6.8715 10.75 7.28571L10.75 15.1429C10.75 15.8332 11.3096 16.3929 12 16.3929C12.6904 16.3929 13.25 15.8332 13.25 15.1429L13.25 7C13.25 5.20507 11.7949 3.75 10 3.75C8.20507 3.75 6.75 5.20507 6.75 7L6.75 15C6.75 17.8995 9.10051 20.25 12 20.25C14.8995 20.25 17.25 17.8995 17.25 15L17.25 7.28571C17.25 6.8715 17.5858 6.53571 18 6.53571C18.4142 6.53571 18.75 6.8715 18.75 7.28571L18.75 15C18.75 18.7279 15.7279 21.75 12 21.75Z"
+                  fill="black" />
+              </svg>
+              <label class="project__label-file" for="file">Прикрепите файлы (заказ, спецификацию, смету, если
+                есть)</label>
+            </div>
+            <input class="input--file" type="file" name="file" id="file" />
+            <div class="project__group-mail">
+              <p class="project__info-mail">Или напишите нам на почту</p>
+              <a class="project__send-mail" href="mailto:info@tpk-gefest.ru">info@tpk-gefest.ru</a>
+            </div>
+            <button class="btn btn--project">Узнать стоимость</button>
+            <p class="project__confidentiality-policy">
+              Нажимая на кнопку, вы даете согласие на обработку своих
+              персональных данных и соглашаетесь с
+              <a href="">Политикой конфиденциальности</a>
+            </p>
+          </form>
         </div>
-        <form class="project__form" action="">
-          <h3 class="project__name-2">
-            Получите предложение на поставку металлопроката
-          </h3>
-          <label class="project__label" for="project-first-name">Как к вам обращаться?</label>
-          <input class="input input--indents-project" id="project-first-name" type="text" placeholder="Ваше имя" />
-          <label class="project__label" for="project-tel">Введите телефон</label>
-          <input class="input input--indents-project" id="project-tel" type="tel"
-            placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _" />
-          <label class="project__label" for="project-email">Куда отправить прайс и каталог?</label>
-          <input class="input input--indents-project" id="project-email" type="email" placeholder="E-mail" />
-          <div class="project__file">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M12 21.75C8.27208 21.75 5.25 18.7279 5.25 15L5.25 7C5.25 4.37665 7.37665 2.25 10 2.25C12.6234 2.25 14.75 4.37665 14.75 7L14.75 15.1429C14.75 16.6616 13.5188 17.8929 12 17.8929C10.4812 17.8929 9.25 16.6616 9.25 15.1429L9.25 7.28571C9.25 6.8715 9.58579 6.53571 10 6.53571C10.4142 6.53571 10.75 6.8715 10.75 7.28571L10.75 15.1429C10.75 15.8332 11.3096 16.3929 12 16.3929C12.6904 16.3929 13.25 15.8332 13.25 15.1429L13.25 7C13.25 5.20507 11.7949 3.75 10 3.75C8.20507 3.75 6.75 5.20507 6.75 7L6.75 15C6.75 17.8995 9.10051 20.25 12 20.25C14.8995 20.25 17.25 17.8995 17.25 15L17.25 7.28571C17.25 6.8715 17.5858 6.53571 18 6.53571C18.4142 6.53571 18.75 6.8715 18.75 7.28571L18.75 15C18.75 18.7279 15.7279 21.75 12 21.75Z"
-                fill="black" />
-            </svg>
-            <label class="project__label-file" for="file">Прикрепите файлы (заказ, спецификацию, смету, если
-              есть)</label>
-          </div>
-          <input class="input--file" type="file" name="file" id="file" />
-          <div class="project__group-mail">
-            <p class="project__info-mail">Или напишите нам на почту</p>
-            <a class="project__send-mail" href="mailto:info@tpk-gefest.ru">info@tpk-gefest.ru</a>
-          </div>
-          <button class="btn btn--project">Узнать стоимость</button>
-          <p class="project__confidentiality-policy">
-            Нажимая на кнопку, вы даете согласие на обработку своих
-            персональных данных и соглашаетесь с
-            <a href="">Политикой конфиденциальности</a>
-          </p>
-        </form>
         <div>
-          <img class="project__img" src="./img/project-img.webp" alt="Сотрудник" />
+          <img class="project__img mobile-design" src="./img/project-img.webp" alt="Сотрудник" />
           <div class="project__img-description">
             <p class="project__img-text">
               Если у вас уже есть предложение от другой компании, прикрепите
@@ -539,7 +574,8 @@
               объемы.
             </p>
           </div>
-          <img src="./img/benefit.webp" alt="Осторожно!" />
+          <img class="mobile-design" src="./img/benefit.webp" alt="Осторожно!" />
+          <img class="desk-design" src="./img/benefit-desk.webp" alt="Осторожно!" />
         </div>
       </div>
     </section>
@@ -548,19 +584,23 @@
         <div class="partners__group">
           <div class="partners__title">
             <h2 class="parnters__name">Покупайте все в одном месте</h2>
-            <p class="parners__description">
+            <p class="partners__description">
               За счет собственного проиизводства и производства на базе
               партнеров мы работаем со всеми основными поставщиками сырья.
             </p>
           </div>
           <div class="partners__group-imgs">
             <div class="partners__group-img">
-              <img src="./img/lipesk.webp" alt="Липецк" />
-              <img src="./img/magnitogorsk.webp" alt="Магнитогорский металлургический комбинат" />
+              <img class="mobile-design" src="./img/lipesk.webp" alt="Липецк" />
+              <img class="mobile-design" src="./img/magnitogorsk.webp" alt="Магнитогорский металлургический комбинат" />
+              <img class="desk-design" src="./img/lipesk-desk.webp" alt="Липецк" />
+              <img class="desk-design" src="./img/magnitogorsk-desk.webp" alt="Магнитогорский металлургический комбинат" />
             </div>
             <div class="partners__group-img">
-              <img src="./img/severstal.webp" alt="Северсталь" />
-              <img src="./img/arcelor.webp" alt="ArcelorMittal" />
+              <img class="mobile-design" src="./img/severstal.webp" alt="Северсталь" />
+              <img class="mobile-design" src="./img/arcelor.webp" alt="ArcelorMittal" />
+              <img class="desk-design" src="./img/severstal-desk.webp" alt="Северсталь" />
+              <img class="desk-design" src="./img/arcelor-desk.webp" alt="ArcelorMittal" />
             </div>
           </div>
         </div>
@@ -577,45 +617,59 @@
             Вся металлопродукция проходит заводские испытания.
           </p>
         </div>
-        <div class="wrapper">
-          <button class="btn--transparent arrow-left">
-            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.5 1L1 7.5L7.5 14" stroke="black" />
-            </svg>
-          </button>
-          <div class="wrapper__content">
-            <img id="0" class="wrapper__img wrapper__img--active" src="./img/gost-1.webp" alt="" />
-            <img id="1" class="wrapper__img" src="./img/gost-2.webp" alt="" />
-            <img id="2" class="wrapper__img" src="./img/gost-3.webp" alt="" />
-            <img id="3" class="wrapper__img" src="./img/gost-4.webp" alt="" />
+        <div class="mobile-design">
+          <div class="wrapper">
+            <button class="btn--transparent arrow-left">
+              <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.5 1L1 7.5L7.5 14" stroke="black" />
+              </svg>
+            </button>
+            <div class="wrapper__content">
+              <img id="0" class="wrapper__img wrapper__img--active" src="./img/gost-1.webp" alt="ГОСТ" />
+              <img id="1" class="wrapper__img" src="./img/gost-2.webp" alt="ГОСТ" />
+              <img id="2" class="wrapper__img" src="./img/gost-3.webp" alt="ГОСТ" />
+              <img id="3" class="wrapper__img" src="./img/gost-4.webp" alt="ГОСТ" />
+            </div>
+            <button class="btn--transparent arrow-right">
+              <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 14L7.5 7.5L1 0.999999" stroke="black" />
+              </svg>
+            </button>
           </div>
-          <button class="btn--transparent arrow-right">
-            <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 14L7.5 7.5L1 0.999999" stroke="black" />
-            </svg>
-          </button>
         </div>
+       
+        <div class="desk-design ">
+          <div class="wrapper__content">
+            <img id="0" class="wrapper__img" src="./img/gost-1.webp" alt="ГОСТ" />
+            <img id="1" class="wrapper__img" src="./img/gost-2.webp" alt="ГОСТ" />
+            <img id="2" class="wrapper__img" src="./img/gost-3.webp" alt="ГОСТ" />
+            <img id="3" class="wrapper__img" src="./img/gost-4.webp" alt="ГОСТ" />
+        </div>
+        </div>
+
       </div>
     </section>
     <section class="first-order">
       <div class="container">
-        <h2 class="first-order__name">
-          Сделайте первый заказ — и мы станем для вас не просто очередным
-          поставщиком, а партнером, предлагающим лучшие условия по постаке
-          металлопроката
-        </h2>
-        <div class="first-order__text">
-          <p>
-            В 2014 году мы создали компанию и поставили цель стать крупнейшим
-            поставщиком металлопроката в РФ и СНГ. Наш приоритет — предлагать
-            клиентам лучший продукт по качеству и логистике.
-          </p>
-          <p>
-            Я понимаю, что сейчас на рынке очень много предложений, и трудно
-            выбрать надежного партнера. Мы искренне заинтересованы в том, чтобы
-            решить любую задачу вашей компании и предложить лучшие условия
-            сотрудничества.
-          </p>
+        <div class="first-order__title">
+          <h2 class="first-order__name">
+            Сделайте первый заказ — и мы станем для вас не просто очередным
+            поставщиком, а партнером, предлагающим лучшие условия по постаке
+            металлопроката
+          </h2>
+          <div class="first-order__text">
+            <p>
+              В 2014 году мы создали компанию и поставили цель стать крупнейшим
+              поставщиком металлопроката в РФ и СНГ. Наш приоритет — предлагать
+              клиентам лучший продукт по качеству и логистике.
+            </p>
+            <p>
+              Я понимаю, что сейчас на рынке очень много предложений, и трудно
+              выбрать надежного партнера. Мы искренне заинтересованы в том, чтобы
+              <span>решить любую задачу вашей компании и предложить лучшие условия
+                сотрудничества.</span>
+            </p>
+          </div>
         </div>
         <div class="first-order__director">
           <div class="first-order__director-group">
@@ -631,9 +685,12 @@
             <p>Оставьте свой номер, мы свяжемся с вами, ответим на любые вопросы и расскажем больше о наших
               возможностях, назовем сроки и цену исполнения вашего заказа.</p>
           </div>
-          <label for="">Введите телефон</label>
-          <input class="input input--indents-first-order" type="text" placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _">
-          <button class="btn btn--first-order">Обсудить заказ</button>
+          <label class="mobile-design" for="">Введите телефон</label>
+          <div class="first-order__form-group">
+            <input class="input input--indents-first-order" type="text" placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _">
+            <button class="btn btn--first-order">Обсудить заказ</button>
+          </div>
+          
         </div>
       </form>
     </section>
@@ -641,13 +698,15 @@
   <footer class="footer">
     <div class="container">
       <nav class="menu header__navbar">
-        <div class="logo">
+        <div class="logo footer__logo">
           <h1 class="logo__name footer__logo">GEFEST</h1>
           <p class="logo__info">Производство и продажа металлопроката</p>
         </div>
-        <div class="menu__info">
-          <button class="btn btn--small">У вас уже есть поставщик?</button>
-          <div class="menu__contact">
+        <div class="menu__info footer__info">
+          <div class="mobile-design">
+            <button class="btn btn--small">У вас уже есть поставщик?</button>
+          </div>
+          <div class="menu__contact footer__contact">
             <a class="menu__phone footer__phone" href="tel:+74954444444">+7 (495) 444-44-44</a>
             <div class="menu__order-feedback">
               <svg class="menu__icon" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -705,17 +764,18 @@
             <figcaption>Skype</figcaption>
           </figure>
         </div>
-        <div class="footer__group">
-          <a href="">Политика конфиденциальности
-          </a>
-          <a href="">Пользовательское соглашение </a>
-          <div class="footer__group-img">
-            <a href="">Разработка сайта
-            </a>
-            <img src="./img/footer.webp" alt="Прибыльные решения">
-          </div>
-        </div>
       </nav>
+      <div class="footer__group">
+        <a href="">Политика конфиденциальности
+        </a>
+        <a href="">Пользовательское соглашение </a>
+        <div class="footer__group-img">
+          <a href="">Разработка сайта
+          </a>
+          <img class="mobile-design" src="./img/footer.webp" alt="Прибыльные решения">
+          <img class="desk-design" src="./img/footer-desk.webp" alt="Прибыльные решения">
+        </div>
+      </div>
     </div>
   </footer>
 

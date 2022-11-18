@@ -5,6 +5,7 @@
   @media (min-width: 1120px) {
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
   }
 
   &__info {
@@ -27,7 +28,7 @@
       text-decoration: none;
     }
     @media (min-width: 1120px) {
-        gap: 0px
+        gap: 4px
     }
   }
 

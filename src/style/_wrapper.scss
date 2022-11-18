@@ -4,10 +4,22 @@
     align-items: center;
     gap: 10px;
 
+    &__content {
+        @media (min-width: 1120px) {
+            margin-top: 52px;
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+        } 
+    }
+
     &__img {
         display: none;
         width: 100%;
         &--active {
+            display: block;
+        }
+        @media (min-width: 1120px) {
             display: block;
         }
     }

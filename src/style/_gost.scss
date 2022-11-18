@@ -1,27 +1,41 @@
 .gost {
-    margin-top: 83px;
-    background: #F6F6F6;
-    padding-top: 55px;
+  margin-top: 83px;
+  background: #f6f6f6;
+  padding-top: 55px;
+  @media (min-width: 1120px) {
+    margin-top: 156px;
+    padding-top: 77px;
+    padding-bottom: 57px;
+  }
 
-    & .container {
-        overflow: hidden;
-    }
+  & .container {
+    overflow: hidden;
+  }
 
-    &__title {
-        display: flex;
-        flex-direction: column;
-        gap: 23px;
-    }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
 
-    &__name {
-        font-weight: $font-weight-600;
-font-size: 18px;
-line-height: 24px;
+  &__name {
+    font-weight: $font-weight-600;
+    font-size: 18px;
+    line-height: 24px;
+    @media (min-width: 1120px) {
+        max-width: 910px;
+      font-size: 32px;
+      line-height: 52px;
     }
+  }
 
-    &__description {
-       font-weight: $font-weight-400;
-       font-size: $small-font-size;
-       line-height: 20px; 
+  &__description {
+    font-weight: $font-weight-400;
+    font-size: $small-font-size;
+    line-height: 20px;
+    @media (min-width: 1120px) {
+        font-size: 20px;
+        line-height: 36px;
     }
+  }
 }

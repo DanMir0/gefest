@@ -1,5 +1,8 @@
 .product {
     margin-top: 32px;
+    @media (min-width: 1120px) {
+        margin-top: 106px;
+    }
     
     &__header {
         display: flex;
@@ -45,13 +48,6 @@
         }
     }
 
-    .mobile-design {
-        display: block;
-        @media (min-width: 1120px) {
-            display: none;
-        }
-    }
-
     &__price {
         margin-top: 30px;
         @media (min-width: 1120px) {
@@ -72,13 +68,6 @@
         margin-top: 33px;
         display: flex;
         flex-direction: row;
-    }
-
-    .desk-design {
-        display: none;
-        @media (min-width: 1120px) {
-            display: block;
-        }
     }
 
     &__menu-item {

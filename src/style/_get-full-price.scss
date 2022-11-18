@@ -1,10 +1,29 @@
 .get-full-price {
+    position: relative;
     margin-top: 45px;
     background: #1A2C41;
     padding: 48px 0 68px 0;
+    @media (min-width: 1120px) {
+        margin-top: 127px;
+        padding: 76px 0 75px 0;
+    }
 
     &__form {
         color: #FFFFFF;
+        @media (min-width: 1120px) {
+            max-width: 608px;
+            width: 100%;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 1120px) {
+            margin-top: 35px;
+            flex-direction: row;
+            gap: 14px;
+        }
     }
 
     &__title {
@@ -12,12 +31,28 @@
         font-size: $big-font-size;
         font-weight: $font-weight-600;
         line-height: 24px;
+        @media (min-width: 1120px) {
+            font-size: 40px;
+            line-height: 52px;
+            word-spacing: 19px;
+        }
     }
 
     &__label {
         font-size: $base-font-size;
         font-weight: $font-weight-400;
         line-height: 28px;
+        @media (min-width: 1120px) {
+            font-size: $big-font-size;
+        }
+    }
+
+    &__group {
+        @media (min-width: 1120px) {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
     }
 
     &__select {
@@ -32,6 +67,9 @@
         font-size: $small-font-size;
         line-height: 28px;
         color: #808080;
+        @media (min-width: 1120px) {
+            margin-bottom: 0;
+        }
     }
 
     &__info {
@@ -40,6 +78,10 @@
         font-weight: $font-weight-400;
         font-size: $base-font-size;
         line-height: 22px;
+        @media (min-width: 1120px) {
+            font-size: $big-font-size;
+            margin-bottom: 20px;
+        }
     }
 
     &__confidences-policy {
@@ -47,5 +89,20 @@
         font-weight: $font-weight-400;
         font-size: $small-font-size;
         line-height: 16px;
+        @media (min-width: 1120px) {
+            margin-top: 8px;
+            max-width: 400px;
+            font-size: 15px;
+        }
+    }
+
+    &__img {
+        display: none;
+        @media (min-width: 1120px) {
+            display: block;
+            position: absolute;
+            top: -85px;
+            right: 285px;
+        }
     }
 }

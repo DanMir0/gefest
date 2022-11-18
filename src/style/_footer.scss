@@ -2,6 +2,9 @@
     background: #121415;
     color: #FFFFFF;
     padding-bottom: 36px;
+    @media (min-width) {
+        padding-top: 25px;
+    }
 
     &__social {
         margin-top: 35px;
@@ -14,6 +17,16 @@
             font-size: 11.7826px;
             line-height: 15px;
         }
+        @media (min-width: 1120px) {
+            margin-top: 45px;
+            gap:25px;
+            max-width: 368px;
+            order: 1;
+            & figcaption {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
     }
 
     &__item {
@@ -22,14 +35,36 @@
         flex-direction: column;
         align-items: center;
         color: #B0B8C1;
+        @media (min-width: 1120px) {
+           gap: 13px;
+        }
     }
 
     &__phone {
         color: #FFFFFF;
+        @media (min-width: 1120px) {
+            font-size: 23px;
+line-height: 20px;
+        }
     }
 
     &__logo {
-        color: #FFFFFF;
+        color: #B9C1D1;
+        @media (min-width: 1120px) {
+            order: 0;
+        }
+    }
+
+    &__contact {
+        gap: 9px;
+    }
+
+    &__info {
+        @media (min-width: 1120px) {
+            order: 2;
+            max-width: 235px;
+            gap: 9px;
+        }
     }
 
     &__group {
@@ -44,6 +79,14 @@
             color: #B0B8C1;
             text-decoration: none;
         }
+        @media (min-width: 1120px) {
+            margin-top: 55px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 
     &__group-img {
@@ -52,5 +95,8 @@
         justify-content: space-between;
         align-items: center;
         gap: 8px;
+        @media (min-width: 1120px) {
+          gap: 12px;
+        }
     }
 }

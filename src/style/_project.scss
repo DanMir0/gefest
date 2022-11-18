@@ -3,27 +3,62 @@
     margin-top: 51px;
     background: #F6F6F6;
     padding-top: 30px;
+    @media (min-width: 1120px) {
+        margin-top: 81px;
+        padding-top: 88px;
+        background-image: url(../img/project-desk.webp);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-position-x: 826px;
+    }
+
+    &__group {
+        @media (min-width: 1120px) {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
 
     &__title {
         display: flex;
         flex-direction: column;
         gap: 24px;
+        @media (min-width: 1120px) {
+            gap: 38px;
+        }
     }
 
     &__name {
         font-weight: $font-weight-600;
         font-size: 18px;
         line-height: 24px;
+        @media (min-width: 1120px) {
+            max-width: 400px;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 50px;
+        }
     }
 
     &__description {
         font-weight: $font-weight-400;
         font-size: $small-font-size;
         line-height: 20px;
+        @media (min-width: 1120px) {
+            max-width: 349px;
+            font-size: 16px;
+            line-height: 28px;
+        }
     }
     
     &__form {
         margin-top: 61px;
+        @media (min-width: 1120px) {
+            max-width: 326px;
+            margin-top: 30px;
+            margin-bottom: 73px;
+        }
     }
 
     &__name-2 {
@@ -31,19 +66,27 @@
         font-size: $big-font-size;
         line-height: 28px;
         margin-bottom: 24px;
+        @media (min-width: 1120px) {
+            font-size: 20px;
+            line-height: 18px;
+        }
     }
 
     &__label {
         font-weight: $font-weight-400;
         font-size: $base-font-size;
         line-height: 28px;
+        @media (min-width: 1120px) {
+            font-size: 16px;
+            line-height: 28px;
+        }
     }
 
     &__file {
         display: flex;
-    flex-direction: row;
-    gap: 4px;
-    margin-top: 9px;
+        flex-direction: row;
+        gap: 4px;
+        margin-top: 9px;
     }
 
     &__label-file {
@@ -51,6 +94,10 @@
         font-weight: $font-weight-400;
         font-size: $small-font-size;
         line-height: 16px;
+        @media (min-width: 1120px) {
+            max-width: 279px;
+            font-size: $base-font-size;
+        }
     }
 
     &__group-mail {
@@ -59,6 +106,12 @@
         font-weight: 300;
         font-size: $base-font-size;
         line-height: 16px;
+        @media (min-width: 1120px) {
+            margin-top: 14px;
+            margin-bottom: 18px;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     &__send-mail {
@@ -78,6 +131,9 @@
             color: $secondary-color;
             text-decoration: none;
         }
+        @media (min-width: 1120px) {
+            margin-top: 15px;
+        }
     }
 
     &__img {
@@ -96,18 +152,26 @@
         width: 100%;
         left: 9px;
         bottom: -434px;
+        @media (min-width: 1120px) {
+            max-width: 504px;
+            padding: 33px 26px 32px 29px;
+            bottom: 65px;
+            left: 712px;
+        }
     }
 
     &__img-text {
         font-weight: $font-weight-400;
         font-size: $small-font-size;
         line-height: 20px;
-        max-width: 264px;
-        width: 100%;
         & a {
             font-weight: $font-weight-600;
             color: #19539F;
             text-decoration: none;
+        }
+        @media (min-width: 1120px) {
+            font-size: $big-font-size;
+            line-height: 28px;
         }
     }
 }

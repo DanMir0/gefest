@@ -1,35 +1,70 @@
 .warehouse {
     margin-top: 46px;
+    @media (min-width: 1120px) {
+        margin-top: 162px;
+    }
 
     &__header {
         display: flex;
         flex-direction: column;
         gap: 11px;
+        @media (min-width: 1120px) {
+            gap: 24px;
+        }
     }
 
     &__title {
         font-weight: $font-weight-600;
         font-size: $big-font-size;
         line-height: 24px;
+        @media (min-width: 1120px) {
+            font-size: 40px;
+            line-height: 52px;
+        }
     }
 
     &__description {
         font-weight: $font-weight-400;
         font-size: $small-font-size;
         line-height: 20px;
+        @media (min-width: 1120px) {
+            font-size: 24px;
+            line-height: 36px;
+        }
     }
 
     &__product {
         margin-top: 41px;
         display: flex;
         flex-direction: column;
+        @media (min-width: 1120px) {
+            margin-top: 61px;
+          flex-direction: row;
+          gap: 121px;
+        }
+    }
+
+    &__group-item {
+        display: flex;
+        flex-direction: column;
         gap: 15px;
+        @media (min-width: 1120px) {
+            gap: 24px;
+        }
     }
 
     &__item {
         display: flex;
         align-items: center;
         gap: 20px;
+        @media (min-width: 1120px) {
+            width: 399px;
+            gap: 39px;
+            & img {
+                width: 100%;
+                max-width: 192px;
+            }
+        }
     }
 
     &__item-name {
@@ -38,6 +73,14 @@
         & span {
             font-weight: $font-weight-600;
         }
+        @media (min-width: 1120px) {
+            font-size: 20px;
+            line-height: 28px;
+            & span {
+                width: 100%;
+                max-width: 168px;
+            }
+        }   
     }
 
     &__figure {
@@ -45,6 +88,9 @@
       margin-top: 34px;
         & img {
             width: 100%;
+        }
+        @media (min-width: 1120px) {
+            margin-top: 0;
         }
     }
 
@@ -57,5 +103,10 @@
         line-height: 16px;
         bottom: 3px;
         padding: 5px 8px 4px 18px;
+        @media (min-width: 1120px) {
+            font-size: 18px;
+            line-height: 28px;
+            padding: 17px 151px 16px 49px;
+        }
     }
 }

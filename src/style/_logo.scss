@@ -6,6 +6,7 @@
     justify-content: space-between;
     @media (min-width: 1120px) {
         justify-content: flex-start;
+        gap: 11px;
     }
     
     &__name {

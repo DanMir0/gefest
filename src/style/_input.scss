@@ -1,29 +1,43 @@
 .input {
-    width: 100%;
-    background: #FFFFFF;
-    border: 1px solid #CDD6DB;
-    border-radius: 4px;
-    padding: 10px;
-    font-weight: $font-weight-400;
-    font-size: $small-font-size;
-    line-height: 24px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #cdd6db;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: $font-weight-400;
+  font-size: $small-font-size;
+  line-height: 24px;
+  @media (min-width: 1120px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
 
-    &--indents-full-price {
-        margin-top: 11px;
-        margin-bottom: 24px;
+  &--indents-full-price {
+    margin-top: 11px;
+    margin-bottom: 24px;
+    @media (min-width: 1120px) {
+      margin-bottom: 0;
     }
+  }
 
-    &--indents-project {
-        margin-top: 2px;
-        margin-bottom: 15px;
+  &--indents-project {
+    margin-top: 2px;
+    margin-bottom: 15px;
+    @media (min-width: 1120px) {
+      height: 57px;
     }
+  }
 
-    &--file {
-        display: none;
-    }
+  &--file {
+    display: none;
+  }
 
-    &--indents-first-order {
-        margin-top: 2px;
-        margin-bottom: 17px;
+  &--indents-first-order {
+    margin-top: 2px;
+    margin-bottom: 17px;
+    @media (min-width: 1120px) {
+      margin: 0;
+      
     }
+  }
 }

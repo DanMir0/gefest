@@ -54,6 +54,7 @@
   &__img {
     display: none;
     @media (min-width: 1120px) {
+      display: block;
       position: absolute;
       right: 215px;
       bottom: 52px;

@@ -49,6 +49,9 @@
 
     &--full-price {
         height: 50px;
+        @media (min-width: 1120px) {
+            max-width: 400px;
+        }
     }
 
     &--project {
@@ -65,5 +68,8 @@
         font-weight: $font-weight-400;
         font-size: $big-font-size;
         line-height: 19px;
+        @media (min-width: 1120px) {
+            height: 57px;
+        }
     }
 }

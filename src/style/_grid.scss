@@ -26,3 +26,17 @@ body {
 .d-none {
     display: none !important;
 }
+
+.mobile-design {
+    display: block;
+    @media (min-width: 1120px) {
+        display: none;
+    }
+}
+
+.desk-design {
+    display: none;
+    @media (min-width: 1120px) {
+        display: block;
+    }
+}

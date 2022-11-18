@@ -1,20 +1,44 @@
 .buy-manufacturer {
   margin-top: 73px;
+  @media (min-width: 1120px) {
+    margin-top: 18px;
+  }
+
+  &__group {
+    @media (min-width: 1120px) {
+     background-image: url(../img/map-location-desk.webp);
+     background-repeat: no-repeat;
+    }
+  }
 
   &__title {
     margin-bottom: 47px;
+    @media (min-width: 1120px) {
+      padding: 50px 0;
+      margin-bottom: 0;
+      max-width: 504px;
+      margin-left: 729px;
+    }
   }
 
   &__name {
     font-weight: $font-weight-400;
     font-size: $big-font-size;
     line-height: 20px;
+    @media (min-width: 1120px) {
+      font-size: 22px;
+      line-height: 32px;
+    }
   }
 
   &__name-2 {
     font-weight: $font-weight-400;
     font-size: $big-font-size;
     line-height: 20px;
+    @media (min-width: 1120px) {
+      font-size: 22px;
+      line-height: 32px;
+    }
   }
 
   &__description {
@@ -22,9 +46,17 @@
     font-weight: $font-weight-400;
     font-size: $small-font-size;
     line-height: 20px;
+    @media (min-width: 1120px) {
+      margin-top: 34px;
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   &__img {
     width: 100%;
+    @media (min-width: 1120px) {
+      display: none;
+    }
   }
 }

@@ -1,26 +1,57 @@
 .production {
-    margin-top: 93px;
+  margin-top: 93px;
+  @media (min-width: 1120px) {
+    margin-top: 57px;
+  }
 
-    &__title {
-        margin-bottom: 44px;
-    }
+  &__group {
+    @media (min-width: 1120px) {
+        padding: 87px 0;
+        background-image: url(../img/production-desk.webp);
+        background-repeat: no-repeat;
+        background-position: right;
+        & img {
+            display: none;
+        }
+     }
+  }
 
-    &__name {
-        font-weight: $font-weight-400;
-        font-size: $big-font-size;
-        line-height: 20px;
+  &__title {
+    margin-bottom: 44px;
+    @media (min-width: 1120px) {
+       max-width: 508px;
     }
+  }
 
-    &__name-2 {
-        font-weight: $font-weight-400;
-        font-size: $big-font-size;
-        line-height: 20px;
+  &__name {
+    font-weight: $font-weight-400;
+    font-size: $big-font-size;
+    line-height: 20px;
+    @media (min-width: 1120px) {
+      font-size: 22px;
+      line-height: 32px;
     }
+  }
 
-    &__description {
-        margin-top: 24px;
-        font-weight: $font-weight-400;
-        font-size: $small-font-size;
-        line-height: 20px;
+  &__name-2 {
+    font-weight: $font-weight-400;
+    font-size: $big-font-size;
+    line-height: 20px;
+    @media (min-width: 1120px) {
+      max-width: 349px;
+      font-size: 22px;
+      line-height: 32px;
     }
+  }
+
+  &__description {
+    margin-top: 24px;
+    font-weight: $font-weight-400;
+    font-size: $small-font-size;
+    line-height: 20px;
+    @media (min-width: 1120px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
 }

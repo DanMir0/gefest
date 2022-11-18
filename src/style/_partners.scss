@@ -1,36 +1,67 @@
 .partners {
+  margin-top: 53px;
+  @media (min-width: 1120px) {
+    margin-top: 112px;
+  }
+
+  &__group {
+    @media (min-width: 1120px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 192px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    @media (min-width: 1120px) {
+      gap: 34px;
+      max-width: 432px;
+    }
+  }
+
+  &__name {
+    font-weight: $font-weight-600;
+    font-size: $base-font-size;
+    line-height: 20px;
+    @media (min-width: 1120px) {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+
+  &__description {
+    font-weight: $font-weight-400;
+    font-size: $small-font-size;
+    line-height: 20px;
+    @media (min-width: 1120px) {
+        font-size: 18px;
+        line-height: 30px;
+    }
+  }
+
+  &__group-imgs {
     margin-top: 53px;
-
-    &__title {
-        display: flex;
-        flex-direction: column;
-        gap: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (min-width: 1120px) {
+      margin-top: 0;
+      gap: 37px;
     }
+  }
 
-    &__name {
-        font-weight: $font-weight-600;
-        font-size: $base-font-size;
-        line-height: 20px;
+  &__group-img {
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: 1120px) {
+      gap: 101px;
     }
-
-    &__description {
-        font-weight: $font-weight-400;
-        font-size: $small-font-size;
-        line-height: 20px;
-    }
-
-    &__group-imgs {
-        margin-top: 53px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    &__group-img {
-        display: flex;
-        flex-direction: row;
-        gap: 38px;
-        justify-content: space-between;
-        align-items: center;
-    }
+  }
 }
